@@ -1,0 +1,157 @@
+:root {
+  color: #1c1f24;
+  background: #f3f5f8;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #1f4b6e;
+}
+
+.shell {
+  min-height: 100vh;
+}
+
+.topbar,
+.login-screen {
+  display: flex;
+}
+
+.topbar {
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #1f4b6e;
+  color: #ffffff;
+}
+
+.topbar h1,
+.login-screen h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.topbar p,
+.login-screen p {
+  margin: 4px 0 0;
+}
+
+.topbar button,
+.panel button,
+.card button {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.topbar button {
+  background: #ffffff;
+  color: #1f4b6e;
+}
+
+.panel button,
+.card button {
+  background: #1f4b6e;
+  color: #ffffff;
+}
+
+.card button {
+  width: 100%;
+}
+
+.card button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.content,
+.login-screen {
+  padding: 20px;
+}
+
+.login-screen {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: min(100%, 420px);
+  padding: 24px;
+  border: 1px solid #d5dbe3;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.field input {
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 1px solid #b7c0cc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.field input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #1f4b6e;
+  outline-offset: 2px;
+}
+
+.error {
+  margin: 0 0 16px;
+  color: #8f1d1d;
+}
+
+.panel {
+  max-width: 760px;
+  padding: 20px;
+  border: 1px solid #d5dbe3;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) 1fr;
+  gap: 8px 16px;
+  margin: 0;
+}
+
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin: 0;
+}
+
+.permission-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+@media (max-width: 640px) {
+  dl {
+    grid-template-columns: 1fr;
+  }
+}
