@@ -1,0 +1,12 @@
+---
+description: Security for trust boundaries, authentication, authorization, injection, XSS, CSRF, SSRF, secrets, and destructive or production changes.
+alwaysApply: false
+---
+
+# Security
+
+- Treat request bodies, query strings, headers, files, and third-party responses as untrusted until validated.
+- Authenticate where the application already requires it, and authorize the action and the resource.
+- Use parameterized queries and safe output encoding. Apply XSS, CSRF, or SSRF controls when the change renders HTML, changes browser state, or fetches a user-supplied URL.
+- Keep secrets and sensitive data out of source, logs, and client bundles. Use the secret store the project already uses.
+- Ask for approval before destructive commands or production changes.

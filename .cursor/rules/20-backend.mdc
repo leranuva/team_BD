@@ -1,0 +1,14 @@
+---
+description: Backend APIs, input validation, auth, transactions, idempotency, and safe data access. Use when changing server handlers, services, or persistence. Follow only the framework and ORM already installed.
+alwaysApply: false
+---
+
+# Backend
+
+- Use the HTTP framework, router, and ORM already installed. Do not introduce another stack for the task.
+- Validate and parse untrusted input at the boundary, before domain logic uses it.
+- Keep transport, application logic, and persistence in the layers the project already uses.
+- Authenticate the caller and authorize the specific action and resource. A valid session is not permission for every operation.
+- Use the existing data layer's transaction when several writes must succeed or fail together.
+- Keep retried creates and mutations idempotent when the API already has idempotency keys or a natural unique constraint.
+- Pass query values as parameters. Do not concatenate untrusted input into SQL, filters, or commands.

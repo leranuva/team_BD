@@ -1,0 +1,20 @@
+---
+alwaysApply: true
+---
+
+# Project Engineering Standards
+
+- Inspect the repository structure before implementing changes.
+- Read package.json and tsconfig.json when available.
+- Follow existing architecture and naming conventions.
+- Prefer simple, maintainable solutions.
+- Avoid unnecessary dependencies and abstractions.
+- Keep changes scoped to the requested task.
+- Use strict TypeScript when applicable.
+- Validate untrusted inputs at system boundaries.
+- Never expose credentials or secrets.
+- Add tests for meaningful behavior changes.
+- Run available lint, typecheck and test commands.
+- Never claim tests passed unless executed.
+- Do not execute destructive commands without approval.
+- Summarize modified files and validation results.

@@ -1,0 +1,14 @@
+---
+description: React components, state, hooks, accessibility, performance, and loading or error UI. Apply Next.js server and client rules only when this repository uses Next.js.
+alwaysApply: false
+---
+
+# React and Next.js
+
+- Follow the UI libraries already installed. Do not treat a React project as Next.js unless Next.js is a dependency.
+- When the project uses the Next.js App Router, keep secrets and server-only access in Server Components or server functions. Add `"use client"` only for interactivity, browser APIs, or client hooks.
+- Use semantic elements, accessible names, labels, keyboard access, and visible focus for interactive UI.
+- Keep state as local as it is, using the state approach the project already has.
+- Follow the Rules of Hooks. Do not call hooks conditionally.
+- Do not duplicate a fetch on server and client, or pull a large client dependency, without a concrete need.
+- Show loading, empty, and error states for async UI.

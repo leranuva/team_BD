@@ -1,0 +1,12 @@
+---
+description: Deterministic tests for observable behavior, regressions, and integration boundaries. Use the test framework already configured in the repository.
+alwaysApply: false
+---
+
+# Testing
+
+- Run the test framework, scripts, and helpers already configured. Do not add a second test stack.
+- Cover the behavior that changed, including a regression for a fixed bug and an integration check when the change crosses a boundary.
+- Keep tests deterministic. Control time, network, and shared state instead of depending on them.
+- Assert observable outcomes. Do not couple tests to private implementation details.
+- Do not report a test as passed unless that command was run in this session and its result was seen.
